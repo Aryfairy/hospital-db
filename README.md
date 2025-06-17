@@ -1,52 +1,49 @@
-# Projeto Hospital - MongoDB
+# Projeto Banco de Dados — Hospital Fundamental (MongoDB)
 
 ## Descrição
-Projeto de banco de dados MongoDB para controle de informações hospitalares. Inclui cadastro de médicos, pacientes, consultas, internações, receituário e controle de enfermagem.
+Este projeto simula um banco de dados para um hospital. Ele permite controlar consultas, médicos, pacientes, internações, convênios, receitas e enfermaria. Foi desenvolvido utilizando MongoDB, estruturado em coleções que refletem as entidades reais de um ambiente hospitalar.
 
 ---
 
-## Estrutura do Projeto
-
-- `/diagramas` → Contém o diagrama entidade-relacionamento (ERD) do projeto.
-- `/modelo` → Arquivo JSON com a modelagem das coleções do MongoDB.
-- `/scripts_povoamento` → Script de povoamento (inserção dos dados iniciais).
-- `/scripts_atualizacao` → Script de atualizações e manutenções nos dados.
-- `/scripts_consultas` → Script com consultas complexas no banco MongoDB.
+## Objetivos
+- Organizar e armazenar dados clínicos do hospital.
+- Evitar o uso de planilhas e arquivos manuais.
+- Permitir o gerenciamento eficiente de médicos, pacientes, consultas, internações, receitas e enfermeiros.
 
 ---
 
-## Tecnologias Utilizadas
-
-- MongoDB
-- MongoDB Compass
-- JavaScript (para scripts Mongo)
-- GitHub
-
-## Estrutura do Repositório
-- `/scripts`: Scripts de criação, povoamento, atualização e consultas.
-- `/diagramas`: Diagramas de modelo de dados, entidade-relacionamento e fluxograma.
-- `README.md`: Documentação do projeto.
-
-## Modelo de Dados
-O banco é organizado nas seguintes coleções:
+##  Modelagem do Banco
+### Entidades:
 - Médicos
 - Pacientes
 - Consultas
-- Convênios
 - Receituários
+- Convênios
 - Internações
 - Quartos
-- Tipos de Quarto
 - Enfermeiros
-
-
-## Como Executar
-
-1. Instale o MongoDB e o MongoDB Compass.
-2. Crie um banco chamado: `hospital`
-3. No MongoDB Compass, clique em **“New Collection”** e cole os scripts de `estrutura.js`.
-4. Cole os dados do `populamento.js`.
-5. Faça as alterações do `atualizacoes.js`.
-6. Execute as consultas em `consultas.js`.
+- Relacionamento Enfermeiros x Internações
 
 ---
+## Diagramas
+- MER: Representação das entidades e relacionamentos.
+- Fluxograma: Sequência dos processos no hospital.
+
+---
+
+## Scripts
+- **estrutura.js:** Criação das coleções.
+- **populamento.js:** Inserção de dados simulados.
+- **atualizacoes.js:** Alterações como atualização de status de médicos.
+- **consultas.js:** Consultas para análise dos dados.
+
+---
+
+## Como Executar
+1. Acesse o MongoDB Compass ou outro cliente MongoDB.
+2. Selecione/crie o banco de dados `hospitaldb`.
+3. Execute cada script na sequência:
+   - estrutura.js
+   - populamento.js
+   - atualizacoes.js
+   - consultas.js (para testar as consultas)
