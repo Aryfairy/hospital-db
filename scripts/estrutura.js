@@ -1,4 +1,4 @@
-use hospital;
+use hospitaldb;
 
 // Médicos
 db.createCollection("medicos");
