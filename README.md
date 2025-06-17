@@ -21,3 +21,27 @@ Projeto de banco de dados MongoDB para controle de informações hospitalares. I
 - MongoDB Compass
 - JavaScript (para scripts Mongo)
 - GitHub
+
+## Estrutura do Repositório
+- `/scripts`: Scripts de criação, povoamento, atualização e consultas.
+- `/diagramas`: Diagramas de modelo de dados, entidade-relacionamento e fluxograma.
+- `README.md`: Documentação do projeto.
+
+## Modelo de Dados
+O banco é organizado nas seguintes coleções:
+- Médicos
+- Pacientes
+- Consultas
+- Convênios
+- Receituários
+- Internações
+- Quartos
+- Tipos de Quarto
+- Enfermeiros
+
+## Scripts
+Scripts organizados na pasta `/scripts`:
+1. Criação do Banco e Estrutura de Dados
+2. Povoamento dos Dados
+3. Atualização e Remoção
+4. Consultas Complexas
