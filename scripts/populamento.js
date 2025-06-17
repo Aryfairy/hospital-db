@@ -1,5 +1,5 @@
 //  Selecionando o banco de dados
-use hospitalDB;
+use hospitaldb;
 
 //  Criando coleções
 db.createCollection("medicos");
