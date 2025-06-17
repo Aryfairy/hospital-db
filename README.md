@@ -39,9 +39,14 @@ O banco é organizado nas seguintes coleções:
 - Tipos de Quarto
 - Enfermeiros
 
-## Scripts
-Scripts organizados na pasta `/scripts`:
-1. Criação do Banco e Estrutura de Dados
-2. Povoamento dos Dados
-3. Atualização e Remoção
-4. Consultas Complexas
+
+## Como Executar
+
+1. Instale o MongoDB e o MongoDB Compass.
+2. Crie um banco chamado: `hospital`
+3. No MongoDB Compass, clique em **“New Collection”** e cole os scripts de `estrutura.js`.
+4. Cole os dados do `populamento.js`.
+5. Faça as alterações do `atualizacoes.js`.
+6. Execute as consultas em `consultas.js`.
+
+---
